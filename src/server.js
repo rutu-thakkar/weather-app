@@ -25,11 +25,11 @@ app.get('', (req,res) => {
 })
 
 app.get('/about', (req,res) => {
-    res.render('about',{title: 'About Us', name: 'Rutu Thakkar', body: 'Know more about us'})
+    res.render('about',{title: 'weatherApp', name: 'Rutu Thakkar', body: 'Know more about us'})
 })
 
 app.get('/help', (req,res) => {
-    res.render('help', {title: 'Help', body: 'help information', name: 'Rutu Thakkar', 
+    res.render('help', {title: 'weatherApp', body: 'help information', name: 'Rutu Thakkar', 
     msg : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'})
 });
 
