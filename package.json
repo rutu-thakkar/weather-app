@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Weather app",
   "main": "server.js",
+  "engines": {
+    "node": "16.x",
+    "npm" : "8.*"
+  },
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
