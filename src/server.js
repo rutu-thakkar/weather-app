@@ -62,23 +62,27 @@ app.get('/weather', (req,res) => {
     })  
 });
 
-app.get('/demoroute', (req,res) => {
-    if (!req.query.search) {
-        res.send({
-            error: "You must provide a search"
-        })
-        return
-    } 
-    console.log(req.query.search);
-    res.send("hey")    
+// app.get('/demoroute', (req,res) => {
+//     if (!req.query.search) {
+//         res.send({
+//             error: "You must provide a search"
+//         })
+//         return
+//     } 
+//     console.log(req.query.search);
+//     res.send("hey")    
     
-})
+// })
 
 
 app.get('/help/*', (req,res) => {
     res.render('errorPage', {title: '*Error*',name: 'Rutu Thakkar' ,msg: "Help Arcticle not found"})
 })
 
+app.get('/about/*', (req,res) => {
+    res.render('errorPage', {title: '*Error*',name: 'Rutu Thakkar' ,msg: "Page not found"})
+
+})
 
 // app.get('*', (req,res) => {
 //     res.render('errorPage', {title: '*Error*' ,name: 'Rutu Thakkar',msg: '404: Page Not Found'})
